@@ -5,24 +5,24 @@ Demonstration: https://www.youtube.com/playlist?list=PLwkcLrl6-p9PPxoxIWMyOB2pYA
 SmartHouse IoT – Full-Scale Intelligent Home Automation System
 
 Project Overview:
-A comprehensive 1 m2 scale model of a smart home, integrating over 10 sensors and actuators to simulate a fully automated living environment. The project features a hybrid control system (Mobile App & Voice Control) with real-time data synchronization.
+A comprehensive scale model of a multi-level smart home, integrating over 10 sensors and actuators. The project showcases a hybrid control architecture and a custom-built vertical transport system managed by an optimized scheduling algorithm.
 
 Key Technical Components:
 
-    Hybrid Control Architecture: Utilized an ESP8266 for Wi-Fi connectivity and cloud communication, interfaced with an Arduino Uno for low-level peripheral management.
+    Hybrid Control & Cloud Sync: Utilized an ESP8266 (NodeMCU) as the primary gateway for Wi-Fi connectivity, synchronized with an Arduino Uno for low-level hardware abstraction. Data persistence and real-time state tracking were handled via Firebase Realtime Database.
 
-    Real-time Cloud Integration: Implemented Firebase Realtime Database to synchronize the state of all household devices (lights, gates, security) across multiple control interfaces.
+    Intelligent Elevator System: Designed and implemented a multi-level elevator using a DC motor, H-Bridge, and a rack-and-pinion mechanism. The system features a custom scheduling algorithm that queues floor requests and optimizes travel paths, ensuring efficient vertical movement across all levels.
 
-    Voice & Mobile Interface: Developed a mobile application and integrated Google Assistant via IFTTT/Adafruit IO to allow hands-free voice commands.
+    Garage & Gate Automation: Engineered a functional garage with an integrated car lift and automated sliding gates, utilizing mechanical gears and precise motor timing.
 
-    Advanced Electromechanics: Designed and built a functional garage elevator and sliding gates using DC motors, H-Bridges, and custom gear/rack-and-pinion mechanisms.
+    Environmental Control & Energy: * Implemented an automated climate control system using temperature sensors and cooling fans.
 
-    Environmental & Energy Management: * Automated climate control using fans and temperature sensors.
+        Integrated Solar Panels to demonstrate energy harvesting and sustainable power distribution within an IoT ecosystem.
 
-        Integrated Solar Panels to simulate sustainable energy harvesting.
+        Advanced lighting control using both standard and RGB LEDs for status indication and ambient effects.
 
-        Lighting system featuring both standard and RGB LEDs for mood lighting.
+    Security & Remote Alerts: Integrated PIR motion sensors that trigger a local acoustic alarm (buzzer) and push an automated email notification to the owner’s smartphone upon detection of unauthorized entry.
 
-    Security & Alert System: PIR motion sensors trigger a local buzzer alarm and send an automated email notification to the owner upon detecting an intrusion.
+    Interface: Dual-mode control through a custom-built mobile application and voice integration with Google Assistant, allowing for a seamless user experience.
 
-Hardware Stack: ESP8266 (NodeMCU), Arduino Uno, H-Bridge (L298N), DC Motors, PIR/Temp/Light Sensors, Water Pump, Solar Panels, Radio Modules.
+Hardware Stack: ESP8266, Arduino Uno, L298N H-Bridge, DC Motors, PIR/Temp/LDR Sensors, Water Pump, Solar Panels, Radio Modules (RF).
